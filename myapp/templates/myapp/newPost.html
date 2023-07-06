@@ -31,6 +31,8 @@
 
 
     $(document).on('click', '#submit', function(e) {
+        e.preventDefault();
+        
         formData.append('title', $('#title').val())
         formData.append('description', $('#description').val())
         formData.append('image', $('#image')[0].files[0])
